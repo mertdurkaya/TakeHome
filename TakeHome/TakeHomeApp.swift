@@ -17,6 +17,11 @@ struct TakeHomeApp: App {
                         Symbols.person
                         Text("Home")
                     }
+                ContentView()
+                    .tabItem {
+                        Symbols.gear
+                        Text("Settings")
+                    }
             }
         }
     }

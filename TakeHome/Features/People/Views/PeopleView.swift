@@ -13,6 +13,8 @@ struct PeopleView: View {
     
     @State private var users: [User] = []
     
+    @State private var isCreatePresented = false
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -20,7 +22,10 @@ struct PeopleView: View {
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(users, id: \.id) { user in
-                            PersonItemView(user: user)
+                            NavigationLink(destination: DetailView(user: user)) {
+                                PersonItemView(user: user)
+                                    .frame(maxWidth: .infinity)
+                            }
                         }
                     }
                     .padding()
@@ -42,6 +47,9 @@ struct PeopleView: View {
                     print("Error fetching people: \(error.localizedDescription)")
                 }
             }
+            .sheet(isPresented: $isCreatePresented) {
+                CreateView()
+            }
         }
     }
 }
@@ -59,7 +67,8 @@ private extension PeopleView {
     
     var create: some View {
         Button {
-            print("Add People tapped")
+            isCreatePresented.toggle()
+            
         } label: {
             Symbols.plus
                 .font(.system(.headline, design: .rounded))
