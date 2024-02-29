@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5CDE902B90BC19006D5443 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CDE8F2B90BC19006D5443 /* NetworkManager.swift */; };
 		4E5CE99A2B894EA400B1C8B9 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9992B894EA400B1C8B9 /* CreateView.swift */; };
 		4ECA93222B80199000B521D2 /* TakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECA93212B80199000B521D2 /* TakeHomeApp.swift */; };
 		4ECA93242B80199000B521D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECA93232B80199000B521D2 /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E5CDE8F2B90BC19006D5443 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4E5CE9992B894EA400B1C8B9 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		4ECA931E2B80199000B521D2 /* TakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ECA93212B80199000B521D2 /* TakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeApp.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E5CDE8E2B90BC0A006D5443 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CDE8F2B90BC19006D5443 /* NetworkManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		4ECA93152B80199000B521D2 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		4ECA932F2B801A0400B521D2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				4E5CDE8E2B90BC0A006D5443 /* API */,
 				4ECA93592B8262A600B521D2 /* Views */,
 				4ECA93522B8108BC00B521D2 /* Mapper */,
 				4ECA934F2B81084E00B521D2 /* Model */,
@@ -292,6 +303,8 @@
 			dependencies = (
 			);
 			name = TakeHome;
+			packageProductDependencies = (
+			);
 			productName = TakeHome;
 			productReference = 4ECA931E2B80199000B521D2 /* TakeHome.app */;
 			productType = "com.apple.product-type.application";
@@ -320,6 +333,8 @@
 				Base,
 			);
 			mainGroup = 4ECA93152B80199000B521D2;
+			packageReferences = (
+			);
 			productRefGroup = 4ECA931F2B80199000B521D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +373,7 @@
 				4ECA935B2B8262B300B521D2 /* PillView.swift in Sources */,
 				4E5CE99A2B894EA400B1C8B9 /* CreateView.swift in Sources */,
 				4ECA93222B80199000B521D2 /* TakeHomeApp.swift in Sources */,
+				4E5CDE902B90BC19006D5443 /* NetworkManager.swift in Sources */,
 				4ECA934D2B81079E00B521D2 /* UsersResponse.swift in Sources */,
 				4ECA93582B8261A000B521D2 /* PersonItemView.swift in Sources */,
 				4ECA93512B81085900B521D2 /* Models.swift in Sources */,

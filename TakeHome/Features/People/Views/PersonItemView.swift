@@ -22,9 +22,7 @@ struct PersonItemView: View {
             } placeholder: {
                 ProgressView()
             }
-            
-            
-            
+
             VStack(alignment: .leading, spacing: 4) {
                 PillView(id: user.id)
                 Text("\(user.firstName) \(user.lastName)")
